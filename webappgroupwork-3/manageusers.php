@@ -14,19 +14,7 @@
 </html>
 
 <?php
-    require_once "includes/db_connection.php";
-
-    $sql= "SELECT authorID, firstName, lastName, email, dob, phone FROM authors";
-    $result=mysqli_query($db_connect, $sql);
-
-
-    if ($result->num_rows > 0) {
-        while ($row = $result->fetch_assoc()) {
-            $users[] = $row;
-        }
-    }
-
-    return $users;
+ 
 
 echo "<table>";
     echo "<tr>
