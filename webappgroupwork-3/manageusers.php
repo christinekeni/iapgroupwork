@@ -14,6 +14,8 @@
 </html>
 
 <?php
+ $sql = "SELECT authorID, firstName, lastName, email, dob, phone FROM users ORDER BY signup_date ASC";
+
   // Perform the query
     $result = mysqli_query($db_connect, $sql);
 
