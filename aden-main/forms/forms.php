@@ -42,6 +42,8 @@ class forms{
             <div class="mb-3 form-group">
                <label for="exampleInputEmail1">Email address</label>
                <input type="email" name="email_address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+               <label>Full Name</label>
+               <input placeholder="Enter Full Name" class="form-control" name="fullname" type="text" id="fullname" required> 
                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
             </div>
             <button type="submit" name="signup" class="btn btn-primary">Sign Up</button>
