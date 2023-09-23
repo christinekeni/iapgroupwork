@@ -14,7 +14,10 @@
 </html>
 
 <?php
- 
+  // Perform the query
+    $result = mysqli_query($db_connect, $sql);
+
+    if (mysqli_num_rows($result) > 0) {
 
 echo "<table>";
     echo "<tr>
@@ -28,6 +31,7 @@ echo "<table>";
 	</tr>";
   $count = 1;
     while ($row = mysqli_fetch_assoc($result)) {
+	
         echo "<tr>";
         echo "<td>" . $row["authorID"] . "</td>";
         echo "<td>" . $row["firstName"] . "</td>";
@@ -36,9 +40,15 @@ echo "<table>";
         echo "<td>" . $row["dob"] . "</td>";
         echo "<td>" . $row["phone"] . "</td>";
         echo "</tr>";
+	 $count++;
     }
-    echo "</table>";
-   $count++;
+  
+	     }
+        echo "</table>";
+    } else {
+        echo "No users found.";
+    }
+
 
     mysqli_close($db_connect);
     ?>
