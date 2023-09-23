@@ -38,6 +38,7 @@ echo "<table>";
 	<th>phone</th>
 	
 	</tr>";
+  $count = 1;
     while ($row = mysqli_fetch_assoc($result)) {
         echo "<tr>";
         echo "<td>" . $row["authorID"] . "</td>";
@@ -49,6 +50,7 @@ echo "<table>";
         echo "</tr>";
     }
     echo "</table>";
+   $count++;
 
     mysqli_close($db_connect);
     ?>
