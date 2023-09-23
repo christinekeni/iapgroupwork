@@ -1,0 +1,67 @@
+form input{
+    width: 80%;
+    padding: 12px 20px;
+    border: solid 2px #000;
+    margin: 8px;
+    /* border-radius: 4px; */
+}
+form button{
+    margin-left: 30px;
+    padding: 10px 10px;
+    width:60%;
+    font-family: 'Raleway' ,sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    background-color: #000;
+    color:#fff;
+}
+form p, form h3{
+    margin-left: 8px;
+}
+form h2{
+    text-align: center;
+}
+.passwordk{
+    margin-left: 8px;
+    font-size: xx-small;
+}
+form a{
+    margin: 8px;
+}
+form a:link{
+    color:#000;
+}
+form a:visited{
+    color: #000;
+}
+.signin{
+    text-align: center;
+}
+textarea{
+    width: 80%;
+    padding: 12px 20px;
+    border: solid 2px #000;
+    margin: 8px; 
+    /* margin-left: 30px; */
+}
+.blog form p{
+    margin: 0px;
+    font-family: 'Signika',sans-serif;
+    text-align: left;
+    margin-left: 30px;
+}
+.blog form input{
+    width: 80%;
+    padding: 12px 20px;
+    border: solid 2px #000;
+    margin-left: 30px;
+    text-align: left;
+    align-items: center;
+}
+.blog form button{
+    margin-left: 150px;
+    width: 50%;
+}
+.blog form textarea{
+    margin-left: 30px;
+}

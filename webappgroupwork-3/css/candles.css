@@ -1,0 +1,57 @@
+.candles h1{
+    text-align: center;
+    font-family: 'Raleway',sans-serif;
+    text-shadow: 2px 2px 8px #a69186;
+}
+.candles h2{
+    font-family: 'Raleway',sans-serif;
+    text-align: center;
+}
+.candles p{
+    font-family: 'Signika',sans-serif;
+    letter-spacing: 0em;
+    margin-left: 160px;
+    margin-right: 160px;
+}
+.candles .content p{
+    margin: 8px;
+}
+summary {
+    font-weight: 600;
+    background-color:#a69186;
+    color: #fff;
+    padding: 0.5rem;
+    margin-bottom: 0.25rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+    letter-spacing: 0.1em;
+  }
+  details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+  }
+  details[open] .faq__content{
+    text-align: left;
+    font-family: 'Signika', sans-serif;
+    letter-spacing: 0em;
+    margin-left: 30px;
+  }
+  details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
