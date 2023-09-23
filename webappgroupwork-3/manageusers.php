@@ -20,6 +20,14 @@
     $result=mysqli_query($db_connect, $sql);
 
 
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            $users[] = $row;
+        }
+    }
+
+    return $users;
+
 echo "<table>";
     echo "<tr>
 	<th>authorID</th>
